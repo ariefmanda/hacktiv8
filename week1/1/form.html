@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ind">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form MyBook</title>
+</head>
+<body>
+    <h2>Buat Account Baru!</h2>
+    <h3>Sign Up Form</h3>
+    <form action="welcome.html" method="POST">
+        <p>
+            <label for="First-name">First Name</label><br>
+            <input id="first-name" name="first-Name" type="text">
+        </p>
+        <p>
+            <label for="Last-name">Last name</label><br>
+            <input id="last-name" name="last-name" type="text">
+        </p>
+        <p>
+            <label for="gender">Gender:</label><br>
+            <input id="male-radio" type="radio" name="gender" value="male">
+            <label for="male-radio">Male</label><br>
+            <input id="female-radio" type="radio" name="gender" value="female">
+            <label for="female-radio">Female</label><br>
+            <input id="other-radio" type="radio" name="gender" value="other">
+            <label for="other-radio">Other</label>    
+        </p>
+        <p>
+            <label for="nationality">Nationality:</label><br>
+            <select name="nationality" id="nationality">
+                <option value="malaysian">Malaysian</option>
+                <option value=indonesian>Indonesian</option>
+                <option value="Brunei">Brunei</option>
+            </select>
+        </p>
+        <p>
+            <label for="Language">Language Spoken:</label><br>
+            <input id="Language-checkbox" type="checkbox" name="Language" value="Bahasa Indonesia">
+            <label for="Language-checkbox">Bahasa Indonesia</label><br>
+            <input id="Language-checkbox" type="checkbox" name="Language" value="English">
+            <label for="Language-checkbox">English</label><br>
+            <input id="Language-checkbox" type="checkbox" name="Language" value="Other">
+            <label for="Language-checkbox">Other</label><br>
+        </p>               
+        <p>
+            <label for="Bio">Bio:</label><br>
+            <textarea name="Bio" id="Bio" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <button type="submit">Sign Up</button>
+        </p>
+    </form>
+</body>
+</html>
