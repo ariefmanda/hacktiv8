@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Menggunakan Switch-Case</h1>
+    <ul>
+            <li>Cara Menggunakan Switch-Case</li> 
+            <li>Mengerti Logika Switch-Case</li>
+    </ul>
+    <a href="https://github.com/hacktiv8/phase-0-activities/blob/master/modules/anchor-switch-case.md">link tugas</a>
+    <br><br><br>Cek Hasil in inspect (Command+option+i) <br><br>
+
+    OR <br> <br>
+    <img width="500px" src="screenshot/3.png" alt="variabel">
+    <br><br> OR <br><br>
+    <a href="https://repl.it/MTHm/0">Link repl.it</a>
+<script>
+var tanggal; // assign nilai variabel tanggal disini!
+var bulan; // assign nilai variabel bulan disini! (dengan huruf awal kapital)
+var tahun; // assign nilai variabel tahun disini!
+tanggal=14;
+bulan=4;
+tahun=1996;
+var kodeBulan = 0;
+
+switch (bulan) {
+  case 'Januari':
+  case 'Oktober':
+    kodeBulan = 0;
+    break;
+  case 'Mei':
+    kodeBulan = 1;
+    break;
+  case 'Agustus':
+    kodeBulan = 2;
+    break;
+  case 'Februari':
+  case 'Maret':
+  case 'November':
+    kodeBulan = 3;
+    break;
+  case 'Juni':
+    kodeBulan = 4;
+    break;
+  case 'September':
+  case 'Desember':
+    kodeBulan = 5;
+    break;
+  default:
+    kodeBulan = 6;
+}
+ var tahunLahir=tahun%100;
+ var tahunlahirBagi4=Math.floor(tahunLahir/4);
+ var jawaban=(tahunLahir+tahunlahirBagi4+tanggal+kodeBulan)%7;
+ var tebakan;
+ switch(jawaban){
+   case 0: tebakan="minggu"; break;
+   case 1: tebakan="senin"; break;
+   case 2: tebakan="selasa"; break;
+   case 3: tebakan="rabu"; break;
+   case 4: tebakan="kamis"; break;
+   case 5: tebakan="jumat"; break;
+   case 6: tebakan="sabtu"; break;
+ }
+//Lanjutkan kode dari sini
+
+console.log(tebakan);
+</script>
+</body>
+</html>

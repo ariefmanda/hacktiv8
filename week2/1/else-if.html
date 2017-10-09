@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Menggunakan If Else</h1>
+    <ul>
+        <li>Mengerti Cara Menggunakan If-Else</li>
+        <li>Mengerti Logika If-Else</li>
+        <li>Mengerti Cara Menggunakan Operator Evaluasi ===, !==</li>
+    </ul>
+    <a href="https://github.com/hacktiv8/phase-0-activities/blob/master/modules/anchor-menggunakan-if-else.md">link tugas</a>
+    <br><br><br>Cek Hasil in inspect (Command+option+i) <br><br>
+
+    OR <br> <br>
+    <img width="500px" src="screenshot/2.png" alt="variabel">
+    <br><br> OR <br><br>
+    <a href="https://repl.it/MTEt/2">Link repl.it</a>
+<script>
+var nama=prompt("What your name:");
+var peran=prompt("What is your role number (Kesatria/Tabib/Penyihir)");
+if(nama===''){
+  console.log("Nama tidak boleh kosong");
+  if(peran===''){
+    console.log("Pilih peranmu untuk menulai game")
+  }
+}
+else{
+  if(peran==="Kesatria"||peran=="kesatria"){
+  console.log("Selamat datang di Dunia Proxytia "+nama);
+  console.log("Hallo Ksatria "+nama+", kamu dapat menyerang dengan senjatamu!");
+  }
+  else if(peran==="Tabib"||peran=="tabib"){
+  console.log("Selamat datang di Dunia Proxytia "+nama);
+  console.log("Hallo Tabib "+nama+", kamu akan membantu temanmu yang terluka");
+  }
+  else if(peran==="Penyihir"||peran=="penyihir"){
+  console.log("Selamat datang di Dunia Proxytia "+nama);
+  console.log("Hallo Penyihir "+nama+", ciptakan keajaiban yang membantu kemenanganmu!");
+  }
+  else{
+    console.log("Selamat datang di Dunia Proxytia "+nama);
+    console.log("Peranmu tidak boleh kosong");
+  }
+}
+
+// switch(peran){
+//   case 'Kesatria': { console.log("Hallo Ksatria "+nama+", kamu dapat menyerang dengan senjatamu!"); break;}
+//   case 'Tabib': { console.log("Halo Tabib "+nama+", kamu akan membantu temanmu yang terluka."
+// ); break;}
+//   case 'Penyihir': { console.log("Halo Penyihir "+nama+", ciptakan keajaiban yang membantu kemenanganmu!"); break;}
+//   default: { console.log("Tolong masukan nomor dari nama peran anda "+nama+" ya");
+// }}
+</script>
+</body>
+</html>
