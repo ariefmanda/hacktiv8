@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <title>Create Your Own JavaScript App</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <h1>Create Your Own JavaScript App</h1>
+    <h4>Detail Tugas : <a href="https://github.com/hacktiv8/phase-0-activities/blob/master/modules/js-application.md">Create Your Own JavaScript App</a></h4>
+    <h4>Detail jawaban : <a href="https://repl.it/MdLR/6">Create Your Own JavaScript App</a></h4>
+    <h2>Game TEKNIKSERANG dengan bonus ramalan CINTA <b>CLI</b> (Command Line Interface)</h2>
+    <p>
+      Ini adalah aplikasi game sederhana yang menarik dan mudah jika dibandingkan dengan lainnya.. game ini berjakan di via (GUI) Command Line Interface.
+
+    </p>
+    Untuk menggunakanya, lihat Console CHROME di INSPECT.
+    <h3>Fitur aplikasi</h3>
+    <p>
+      Aplikasi ini memiliki fungsi-fungsi sederhana, yakni :
+      <ul>
+        <li>Sesi yang digunakan</li>
+        <li>Perhitungan game</li>
+        <li>Konversi Nilai Abjad</li>
+        <li>Rumusan Ramalan</li>
+        <li>Penjelasan Ramalan</li>
+        <li>Memulai Ramalan</li>
+        <li>Menghapus Ramalan</li>
+      </ul>
+    <p>
+    <h3>Pseudocode : </h3>
+    <p>
+      <b>Fungsi intro() atau penjelasan permainan:</b><ul>
+			<li>DECLARE variable ‘tokoh’ dengan memilih antara penembak atau samurai</li>
+			<li>IF variable ‘tokoh’ sama dengan penembak THEN</li><ul>
+				<li>DECLARED variable ‘kekuatan’ berisikan shortgun dan gunkong</li></ul>
+			<li>ELSE IF variable tokoh sama dengan samurai THEN</li><ul>
+				<li>DECLARED variable kekuatan berisikan blidecar dan blidekong</li></ul>
+			<li>ELSE</li><ul>
+				<li>CALL fungsi clear()</li></ul>
+			<li>DISPLAY mengucapkan selamat datang kepada variable tokoh dan menjelaskan </li><li>kekuatannya berdasarkan variable kekuatan dan aturan pakai kekuatan untuk variable tokoh. </li>
+			<li>DISPLAY menjelaskan untuk melanjutkan permainan jika mengetikkan sesi(1) di dalam console</li>
+
+</ul><b>Fungsi sesi(indexsesi) atau tahapan permainan:</b><ul>
+	<li>IF variable indexsesi sama dengan 1 THEN</li><ul>
+		<li>DECLARED variabel soal dengan 45</li>
+		<li>DISPLAY soal dari permainan ini dan DECLARE variable soal</li>
+		<li>CALL fungsi perang dengan menyertakan variabel soal dan score dan DECLARE variabel hasil</li>
+		<li>IF variable hasil sama dengan 0 THEN</li><ul>
+			<li>DISPLAY mengucapkan selamat karena sudah memenangkan permainan</li>
+			<li>DISPLAY bonus pemenang untuk mengramal pasangan dengan mengetikkan ramal() di dalam console</li></ul>
+		<li>ELSE</li><ul>
+			<li>DISPLAY Semangat melanjutkan lagi permainan</li></ul>
+</ul></ul>
+<b>Fungsi perang(jawabanSoal, nilaiKekuatan monster) atau tahapan menghitung nilai tokoh melawan monster:</b><ul>
+	<li>DECLARE variable score sama dengan variable nilaiKekuatan</li>
+	<li>SPLIT variable jawabanSoal dengan pemisah ‘’ dan DECLARE variable c</li>
+	<li>IF panjang dari variable c kurang dari sama dengan 8 THEN</li><ul>
+		<li>FOR setiap variable c</li><ul>
+			<li>IF variable c dalam array pengulangan sama dengan 2 THEN</li><ul>
+				<li>IF variable c dalam array pengulangan dikurangin 1 dan 2 sama dengan 1 THEN</li><ul>
+					<li>DECLARED variable score sama dengan variable score dikurang 10</li>
+					<li>DISPLAY saudara variable tokoh sudah menyerang monster dengan kekuatan kedua</li></ul>
+				<li>ELSE  IF  variable c dalam array pengulangan dikurangi 1 dan 2 tidak sama dengan 1 THEN</li></ul><ul>
+					<li>DISPLAY maaf kekuatan senjata belum aktif</li></ul></ul>
+			<li>ELSE IF  variable c dalam array pengulangan sama dengan 1  THEN</li><ul>
+				<li>DECLARED variable score sama dengan variable score dikurang 5</li>
+				<li>DISPLAY saudara variabale tokoh menyerang monster dengan kekuatan pertama</li></ul>
+		<li>RETURN CALL variable score</li></ul>
+	<li>ELSE</li><ul>
+		<li>DISPLAY maaf inputan anda lebih dari 8</li>
+		<li>RETURN CALL variable score</li></ul></ul>
+
+<b>Fungsi Ramal() atau meramal pasangan:</b><ul>
+	<li>CLEAR console</li>
+	<li>DISPLAY nama lengkap anda dan DECLARED variable namaCowok</li>
+	<li>DISPLAY nama lengkap pasangan anda dan DECLARED variable namaCewek</li>
+	<li>CALL fungsi hitungRamalan diikuti variabel namaCowok dan namaCewek</li>
+
+</ul><b>Fungsi hitungRamalan(namaCowok dan namaCewek) atau menghitung nilai dari nama:</b><ul>
+	<li>SPLIT variable namaCowok dengan pemisah ‘ ‘ atau spasi dan DECLARED variabel splitCO</li>
+	<li>SPLIT variable namaCewek dengan pemisah ‘ ’ atau spasi dan DECLARED variable splitCE</li>
+	<li>FOR setiap variabel splitCO</li><ul>
+		<li>SPLIT variable splitCO dengan array yang diulang dan DECLARED variable hurCO</li>
+		<li>CALL fungsi konvert disertai variable hurCO dengan array 0 dan DECLARED  variable nilai</li>
+		<li>DECLARED variable nilaiCowok dengan penambahan variable nilaiCowok ditambah variable nilai</li></ul>
+	<li>FOR setiap variabel splitCE</li><ul>
+		<li>SPLIT variable splitCE dengan array yang diulang dan DECLARED variable hurCE</li>
+		<li>CALL fungsi konvert disertai variable hurCE dengan array 0 dan DECLARED  variable nilai</li>
+		<li>DECLARED variable nilaiCewek dengan penambahan variable nilaiCewek ditambah variable nilai</li></ul>
+	<li>DECLARED variable hasil dengan penambahan variable nilaiCowok ditambah nilaiCewek</li>
+	<li>CALL fungsi penjelasan disertai variable hasil</li>
+
+</ul><b>Fungsi penjelasan(nilaiRamalan) atau menyamakan nilai berdasarkan wijaya kusuma:</b><ul>
+	<li>IF variable nilaiRamalan lebih kecil sama dengan 9 THEN</li><ul>
+		<li>DISPLAY hasil ramalan wijaya kusuma</li></ul>
+	<li>ELSE IF variable nilaiRamalan lebih kecil sama dengan 19dan variable nilaiAbjad lebih kecil sama dengan 10 THEN</li><ul>
+		<li>DISPLAY hasil ramalan wijaya kusuma</li></ul>
+	<li>ELSE IF  variable nilaiRamalan lebih kecil sama dengan 29dan variable nilaiAbjad lebih kecil sama dengan 20 THEN</li><ul>
+		<li>DISPLAY hasil ramalan wijaya kusuma</li></ul>
+	<li>ELSE IF variable nilaiRamalan lebih kecil sama dengan 39 dan variable nilaiAbjad lebih kecil sama dengan 30 THEN</li><ul>
+		<li>DISPLAY hasil ramalan wijaya kusuma</li></ul>
+	<li>ELSE</li><ul>
+		<li>DISPLAY hasil ramalan wijaya kusuma</li></ul></ul>
+
+<b>Fungsi konvert(nilaiAbjad) atau mengkonversi huruf menjadi nilai menurut wijaya kusuma:</b><ul>
+	<li>IF variable nilaiAbjad sama dengan a  OR j OR s THEN</li><ul>
+		<li>DECLARED variable nilai sama dengan 1</li></ul>
+	<li>ELSE IF variable nilaiAbjad sama dengan b  OR k OR t THEN</li><ul>
+		<li>DECLARED variable nilai sama dengan 2</li></ul>
+	<li>ELSE IF variable nilaiAbjad sama dengan c  OR l OR u THEN</li><ul>
+		<li>DECLARED variable nilai sama dengan 3</li></ul>
+	<li>ELSE IF variable nilaiAbjad sama dengan d  OR m OR v THEN</li><ul>
+		<li>DECLARED variable nilai sama dengan 4</li></ul>
+	<li>ELSE IF variable nilaiAbjad sama dengan e  OR n OR w THEN</li><ul>
+		<li>DECLARED variable nilai sama dengan 5</li></ul>
+	<li>ELSE IF variable nilaiAbjad sama dengan f  OR o OR x THEN</li><ul>
+		<li>DECLARED variable nilai sama dengan 6</li></ul>
+	<li>ELSE IF variable nilaiAbjad sama dengan g  OR p OR y THEN</li><ul>
+		<li>DECLARED variable nilai sama dengan 7</li></ul>
+	<li>ELSE IF variable nilaiAbjad sama dengan h  OR q OR z THEN</li><ul>
+		<li>DECLARED variable nilai sama dengan 8</li></ul>
+	<li>ELSE</li><ul>
+		<li>DECLARED variable nilai sama dengan 9</li></ul>
+	<li>RETURN variable nilai</li>
+</ul>
+
+    <h3>Di balik layar</h3>
+    <p>
+      Menurut seorang pengarang buku ramalan cinta terkemuka, Wijaya Kusuma dan <a href="http://www.ngegosip.com/ramalan-cinta-menurut-nama-kamu-pasangan">blog</a>
+    </p>
+    <br>
+  </body>
+</html>
