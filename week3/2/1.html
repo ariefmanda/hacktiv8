@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Logic Challenge - Bandingkan Angka</h2>
+    <h4>PROBLEM:<br> sebuah function bandingkanAngka(angka1, angka2) yang menerima dua parameter angka. Function akan me-return
+        nilai true jika angka2 lebih besar dari angka1, dan false jika sebaliknya. Jika kedua angka bernilai sama, function
+        akan me-return -1.
+    </h4>
+    OPEN INSPECT IN CHROME FOR LOOK MY CODE
+    <Script>
+        function bandingkanAngka(angka1, angka2) {
+            if(angka1>angka2){
+                return false;
+            }else if(angka1<angka2){
+                return true;
+            }else{
+                return -1;
+            }
+        }
+
+        // TEST CASES
+        console.log(bandingkanAngka(5, 8)); // true
+        console.log(bandingkanAngka(5, 3)); // false
+        console.log(bandingkanAngka(4, 4)); // -1
+        console.log(bandingkanAngka(3, 3)); // -1
+        console.log(bandingkanAngka(17, 2)); // false
+    </Script>
+</body>
+
+</html>

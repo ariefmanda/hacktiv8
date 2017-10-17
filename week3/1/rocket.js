@@ -26,22 +26,19 @@ oooooo
 */
 
 function drawLadder(row) {
-    var output='';
-    for(var i=0;i<row;i++){
-      if(i%2===0){
-        output='x';
-      }else{
-        output='0';
-      }
-      for(var j=0;j<i;j++) {
-          output+=output;
-      }
-      console.log(output);  
+  for (var c = 0; c < row; c++) {
+    var b = '';
+    if (c % 2 == 0) {
+      d = 'x'
+    } else {
+      d = 'o';
+    } for (var e = 0; e <= c; e++) {
+      b += d + ' ';
     }
+    console.log(b);
   }
-  
-  
-  console.log(drawLadder(3))
-  console.log(drawLadder(6))
-  
-  
+}
+
+
+console.log(drawLadder(3))
+console.log(drawLadder(6))

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> LogicChallenge - X dan O</h1>
+    <h3></h3>Problem</h3>
+
+    Diberikan sebuah function xo(str) yang menerima satu parameter berupa string. Function angkan me-return true jika jumlah
+    karakter x sama dengan jumlah karakter o, dan false jika tidak.
+
+    <script>
+
+        function xo(str) {
+            // you can only write your code here!
+            var jmlKataO=0, jmlKataX=0, hasil;
+            var kata = str.split('');
+            for (var i = 0; i < kata.length; i++) {
+                if (kata[i] === 'x') {
+                    jmlKataX += 1;
+                } else {
+                    jmlKataO += 1;
+                }
+            }
+            hasil = jmlKataO / jmlKataX;
+            return hasil === 1;
+        }
+
+        // TEST CASES
+        console.log(xo('xoxoxo')); // true
+        console.log(xo('oxoxo')); // false
+        console.log(xo('oxo')); // false
+        console.log(xo('xxxooo')); // true
+        console.log(xo('xoxooxxo')); // true
+    </script>
+</body>
+
+</html>
