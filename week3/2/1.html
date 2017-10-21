@@ -17,10 +17,8 @@
     OPEN INSPECT IN CHROME FOR LOOK MY CODE
     <Script>
         function bandingkanAngka(angka1, angka2) {
-            if(angka1>angka2){
-                return false;
-            }else if(angka1<angka2){
-                return true;
+            if(angka1!==angka2){
+                return angka2>angka1;
             }else{
                 return -1;
             }

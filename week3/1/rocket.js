@@ -42,3 +42,13 @@ function drawLadder(row) {
 
 console.log(drawLadder(3))
 console.log(drawLadder(6))
+
+function pow(a, b) {
+  if (b === 0) {
+    return 1;
+  } else {
+    return a * pow(a, b - 1);
+  }
+}
+
+console.log(pow(2, 10000));
