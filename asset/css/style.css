@@ -1,5 +1,8 @@
 body{
   margin: auto;
+  background-image: url(../img/22218387_916566575167424_7053919076649174274_o.jpg);
+  background-size: 100%; 
+  color: white;
 }
 header{
   background-color: #333;
