@@ -65,11 +65,23 @@ function credentialValidator(username, password, email) {
     }
     code+=1;
   }
-  if(password.length>=5){
-    if(isNaN(password)!==true){
-      return false
+  if(password.length<5){
+    return false;
+  }else{
+    var numScore=0;
+    var alfaScore=0;
+    for(var x=0;x<password.length;x++){
+      if(isNaN(Number(password[x]))){
+        numScore++
+      }else{
+        alfaScore++
+      }
     }
-    code+=1
+    if(numScore===0||alfaScore===0){
+      return false;
+    }else{
+      code++;
+    }
   }
   if(email.length>=6){
     var s=email.split('@')
