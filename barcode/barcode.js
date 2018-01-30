@@ -96,7 +96,7 @@ var barcode = function() {
 	}
 
 	function snapshot() {
-		elements.ctx.drawImage(elements.video, 0, 0, dimensions.width, dimensions.height);
+		elements.ctx.drawImage(elements.video, -1, -1, dimensions.width, dimensions.height);
 		processImage();		
 	}
 
